@@ -1,0 +1,39 @@
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Sorting Visualizer</title>
+</head>
+<body>
+  <h1>Sorting Visualizer</h1>
+  <div class="controls">
+    <label for="algorithm"><b>Choose Sorting Algorithm</b></label>
+    <select id="algorithm">
+      <option value="bubbleSort">Bubble Sort</option>
+      <option value="mergeSort">Merge Sort</option>
+      <option value="quickSort">Quick Sort</option>
+    </select>
+    <button onclick="startSorting()">Start Sorting</button>
+    <button onclick="resetArray()">Reset Array</button>
+    <label for="theme"><b>Choose Theme:</b></label>
+    <select id="theme" onchange="changeTheme(this.value)">
+      <option value="default">Default</option>
+      <option value="dark">Dark</option>
+      <option value="light">Light</option>
+      <option value="ocean">Ocean</option>
+      <option value="forest">Forest</option>
+    </select>
+  </div>
+  <div class="metrics">
+    <p id="swaps">Swaps: 0</p>
+    <p id="comparisons">Comparisons: 0</p>
+  </div>
+  <canvas id="myCanvas"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
+

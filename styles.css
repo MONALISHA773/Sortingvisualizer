@@ -1,0 +1,94 @@
+
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: hwb(334 47% 47%);
+  color: white;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.controls > * {
+  margin: 5px; 
+}
+
+label {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+select, button {
+  padding: 10px 20px;
+  background-color: #db9dc9;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 10px;
+  color: white;
+}
+
+select {
+  background-color: #db9dc9;
+}
+
+button:hover {
+  background-color: #aa9fa6;
+}
+
+canvas {
+  border: 1px solid rgb(202, 101, 174);
+  width: 100%;
+  max-width: 1200px;
+  height: 500px;
+}
+
+.metrics {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.metrics p {
+  margin: 0 10px;
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: medium;
+}
+
+body.dark {
+  background-color: #222;
+  color: white;
+}
+
+body.light {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+body.ocean {
+  background-color: #006994;
+  color: #e0f7fa;
+}
+
+body.forest {
+  background-color: #70c370;
+  color: #f7f8f7;
+}
+
